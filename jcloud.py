@@ -50,7 +50,8 @@ def validate_and_return_download_payload():
   else:
     print("download_data payload does not match request")
   
-check_status_codes()
-display_payload_request()
-validate_and_return_read_payload()
-validate_and_return_download_payload()
+if __name__ == "__main__":
+  check_status_codes()
+  display_payload_request()
+  validate_and_return_read_payload()
+  validate_and_return_download_payload()

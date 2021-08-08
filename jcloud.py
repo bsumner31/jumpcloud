@@ -25,7 +25,6 @@ download_resp = requests.post(url, headers=headers, data=download_data)
 def check_status_codes():
   if read_resp.status_code != 200:
     print("could not return request for read payload, status code: " + str(read_resp.status_code))
-    exit()
 
   if download_resp.status_code != 200:
     print("could not return request for download payload, status code: " + str(read_resp.status_code))

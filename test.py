@@ -1,7 +1,5 @@
 from service import *
 
-
-
 def run_tests():
   assert read_resp.status_code == 200, "Status code should be 200"
 
@@ -17,7 +15,3 @@ def run_tests():
 if __name__ == "__main__":
   run_tests()
   
-
-
-
-
